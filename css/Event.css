@@ -1,0 +1,182 @@
+#eventInTD{
+	position : relative;
+	height : 41%;
+	width : 90%;
+	left : 5%;
+	box-sizing : border-box;
+	overflow-y : scroll;
+}
+
+#from,#edit{
+	float: left;
+}
+
+#to,#remove{
+	float: right;
+}
+
+table{
+	width : 100%;
+}
+
+#dayHeader{
+	text-align : center;
+	font-size : 25px;
+}
+
+hr{
+	margin-bottom : 3%;
+	margin-top : 3%;
+}
+#Event{
+	position : relative;
+	left : 5%;
+	width : 90%;
+    height: 53%;
+	box-sizing : border-box;
+	overflow-y : scroll;
+}
+/*title design*/
+.title{
+    margin-top: 5%;
+    font-size: 20px;
+    height:30px;
+    width:80%;
+    margin-left: 10%;
+    outline:0;
+
+}
+/*description design*/
+.description{
+  margin-top: 5%;
+  height: 90px;
+  width:80%;
+  margin-left: 10%;
+  outline:0;
+}
+/*the boxes in the month*/
+.weekBoxs{
+	display: inline-block;
+	padding-left : 3%;
+	width: 14.2857%;	
+	box-sizing : border-box;
+}
+
+.weekBoxs label,input{
+	margin : 0;
+	padding : 0;
+}
+/*design of all cinds of days relevant or not to current month*/
+.weekly,.pickday,.monthly,#daily{
+  vertical-align: middle;
+  width:80%;
+  margin-left: 10%;
+  position: relative;
+  display: inline-block;
+}
+/*design of year selection*/
+.date{
+  margin-top: 5%;
+  width:80%;
+  margin-left: 10%;
+}
+/*design of number of repeats*/
+.numrepeat
+{
+  width: 26%;
+  height: 25px;
+  margin-left: 27%;
+  display: inline-block;
+}
+/*color picker*/
+.color
+{
+  width:10%;
+  display: inline-block;
+}
+/*------------------------------OK and CANCEL--------------------------*/
+/*basic design of ok and cancel buttons*/
+.cancel
+{
+  float: right;
+}
+
+.ok
+{
+  margin-left: 5%;
+  float: left;
+}
+
+.action
+{
+  color: #777;
+  font-size: 33px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+	outline:0;
+}
+.action:hover{
+  color:#1abc9c;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------SWITCH_FIELD-------------*/
+
+.switch-field {
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  overflow: hidden;
+  width: 100%;
+	text-align : center;
+	display: block;
+}
+
+.switch-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.switch-field label {
+  display: inline-block;
+  width: 60px;
+  background-color: #e4e4e4;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: none;
+  padding: 6px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition:    all 0.1s ease-in-out;
+  -ms-transition:     all 0.1s ease-in-out;
+  -o-transition:      all 0.1s ease-in-out;
+  transition:         all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+    cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  background-color: #1abc9c;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+  border-radius: 0 4px 4px 0;
+}

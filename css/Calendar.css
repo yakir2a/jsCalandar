@@ -1,0 +1,155 @@
+
+*{
+font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+}
+
+body{
+	background-Color : #bfbfbf;
+	margin : 0 0 0 0;
+	height: 100%;
+	box-sizing : border-box;
+}
+
+main{
+	width : 100%;
+	height : 90.9%;
+	box-sizing : border-box;
+}
+/*the wrapper of the calendar*/
+#calendar{
+	position: absolute;
+	top : 0;
+	width : 80%;
+	height : 100%;
+	box-sizing : border-box;
+	
+}
+
+.monthWeek{
+	position : relative;
+}
+/*the size of event titles in the day boxes*/
+.eventField{
+	width : 100%;
+}
+
+.tdSizeMonth{
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*lets us control if event adder is visible or not in javascript*/
+#eventHandler{
+	float: right;
+	top : 0;
+	background-color: #f2f2f2;
+	width : 0;
+	height : 100%;
+	box-sizing : border-box;
+}
+/*design of monthly boxes and thei borders*/
+.CMday,.PMday,.NMday,.current_Day{
+	display: inline-block;
+	text-align : right;
+	padding : 0.3%;
+	border : 1px solid #e6e6e6;
+	box-sizing: border-box;
+	overflow : auto;
+}
+
+.CMday{
+	background-Color : white;
+}
+
+.PMday,.NMday{
+		background-Color : #f2f2f2;
+}
+/*the month section 35 days*/
+#month{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	float: left;
+	box-sizing: border-box;
+	
+}
+/*The green line*/
+header{
+	width: 100%;
+	height : 60px;
+	box-sizing: border-box;
+	background-color: #1abc9c;
+}
+/*the small line of weeks*/
+.week{
+	width: 100%;
+	height: 20px;
+	background-color:#e6e6e6;
+}
+
+.weekDay{
+	
+	display: inline-block;
+	text-align : center;
+	color: #666;
+	box-sizing: border-box;
+}
+/*Design of buttons*/
+.button{
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.displayMonth{
+	color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align : center;
+	pointer-events: none;
+	display: block;	
+	position: relative;
+}
+
+.nextMonth{
+	position: relative;
+	float: right;
+	/*font-size: 35px;*/
+	/*display: inline-block;*/
+	background-color: Transparent;	
+	border: none;
+  	cursor:pointer;
+  	overflow: hidden;
+  	outline:0;	
+}
+.prevMonth{
+	position: relative;
+	float: left;
+	/*font-size: 35px;*/
+	/*display: inline-block;*/
+	background-color: Transparent;	
+	border: none;
+  	cursor:pointer;
+  	overflow: hidden;
+  	outline:0;		
+}
+
+.dNum{
+	font-size: 12px;
+	color: #777;
+	height : 10%;
+}
+
+#edit,#remove{
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:0;
+}
+
+
+
